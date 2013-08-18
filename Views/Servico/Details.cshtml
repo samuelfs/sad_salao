@@ -1,0 +1,31 @@
+﻿@model SadCabelereiro.Models.Servico
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="row">
+    <div class="col-lg-9">
+        <label>Código</label>
+        @Model.pk_id_servico
+    </div>
+
+    <div class="col-lg-9">
+        <label>Descrição</label>
+        @Model.descricao
+    </div>
+
+    <div class="col-lg-9">
+        <label>Valor</label>
+        @Model.valor
+    </div>
+
+    <div class="col-lg-9">
+        <label>Tempo médio de execução</label>
+        @Model.tempo_medio_execucao
+    </div>
+
+    <div class="col-lg-9">
+        @Html.ActionLink("Editar", "Edit", new {id = Model.pk_id_servico})
+    </div>
+    
+</div>
