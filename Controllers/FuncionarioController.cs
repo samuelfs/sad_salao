@@ -6,17 +6,16 @@ using System.Web.Mvc;
 
 namespace SadCabelereiro.Controllers
 {
-    public class ClienteController : Controller
+    public class FuncionarioController : Controller
     {
-        //
-        // GET: /Cliente/
 
         public ActionResult Index()
         {
             return View();
         }
 
-
+        //
+        // GET: /Funcionario/Details/5
 
         public ActionResult Details(int id)
         {
@@ -24,7 +23,7 @@ namespace SadCabelereiro.Controllers
         }
 
         //
-        // GET: /Cliente/Create
+        // GET: /Funcionario/Create
 
         public ActionResult Create()
         {
@@ -32,7 +31,7 @@ namespace SadCabelereiro.Controllers
         }
 
         //
-        // POST: /Cliente/Create
+        // POST: /Funcionario/Create
 
         [HttpPost]
         public ActionResult Create(FormCollection collection)
@@ -50,7 +49,7 @@ namespace SadCabelereiro.Controllers
         }
 
         //
-        // GET: /Cliente/Edit/5
+        // GET: /Funcionario/Edit/5
 
         public ActionResult Edit(int id)
         {
@@ -58,7 +57,7 @@ namespace SadCabelereiro.Controllers
         }
 
         //
-        // POST: /Cliente/Edit/5
+        // POST: /Funcionario/Edit/5
 
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
@@ -76,7 +75,7 @@ namespace SadCabelereiro.Controllers
         }
 
         //
-        // GET: /Cliente/Delete/5
+        // GET: /Funcionario/Delete/5
 
         public ActionResult Delete(int id)
         {
@@ -84,7 +83,7 @@ namespace SadCabelereiro.Controllers
         }
 
         //
-        // POST: /Cliente/Delete/5
+        // POST: /Funcionario/Delete/5
 
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
